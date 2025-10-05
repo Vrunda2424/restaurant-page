@@ -1,0 +1,203 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Delicious Bites - Menu</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      background: #f8f9fa;
+      margin: 0;
+      padding: 0;
+    }
+
+    header {
+           
+      background: #8B0000;
+      color: white;
+      text-align: center;
+      padding: 20px;
+    }
+
+    header h1 {
+      margin: 0;
+    }
+
+    nav {
+      margin-top: 10px;
+    }
+
+    nav a {
+      color: white;
+      margin: 10px;
+      text-decoration: none;
+      font-weight: bold;
+    }
+
+    nav a:hover {
+      text-decoration: underline;
+    }
+
+    main {
+      width: 90%;
+      max-width: 900px;
+      margin: 20px auto;
+    }
+
+    h2 {
+      border-bottom: 2px solid #8B0000;
+      padding-bottom: 5px;
+      color: #8B0000;
+    }
+
+    .menu-grid {
+      display: grid;
+      grid-template-columns: 1fr auto;
+      gap: 15px;
+      align-items: center;
+    }
+
+    article {
+      display: flex;
+      align-items: center;
+      gap: 15px;
+      background: #fff;
+      padding: 10px;
+      border-radius: 8px;
+      box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+    }
+
+    article img {
+      width: 70px;
+      height: 70px;
+      object-fit: cover;
+      border-radius: 8px;
+    }
+
+    .price {
+      font-weight: bold;
+      color: #8B0000;
+      text-align: right;
+    }
+
+    .special {
+      background: #ffeeba;
+      padding: 15px;
+      border-left: 5px solid #ff8800;
+      border-radius: 8px;
+      margin-bottom: 30px;
+    }
+
+    footer {
+      text-align: center;
+      padding: 10px;
+      background: #333;
+      color: #fff;
+    }
+
+    @media (max-width: 768px) {
+      .menu-grid {
+        grid-template-columns: 1fr;
+      }
+      .price {
+        text-align: left;
+      }
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <h1>Our Menu</h1>
+    <nav>
+      <a href="index.html">Home</a>
+      <a href="about.html">About Us</a>
+    </nav>
+  </header>
+
+  <main>
+    <!-- Special of the Day -->
+    <section class="special">
+      <h2>🌟 Special of the Day</h2>
+      <p>Grilled Salmon with Lemon Butter Sauce – Served with garlic bread and fresh salad.</p>
+      <p class="price">₹499</p>
+    </section>
+
+    <!-- Starters -->
+    <section>
+      <h2>Starters</h2>
+      <div class="menu-grid">
+        <article>
+          <img src="images/soup.jpg" alt="Tomato Soup">
+          <div>
+            <h3>Tomato Soup</h3>
+            <p>Creamy tomato soup with fresh herbs.</p>
+          </div>
+        </article>
+        <p class="price">₹120</p>
+
+        <article>
+          <img src="images/caesar.jpg" alt="Caesar Salad">
+          <div>
+            <h3>Caesar Salad</h3>
+            <p>Crisp romaine lettuce with parmesan & croutons.</p>
+          </div>
+        </article>
+        <p class="price">₹180</p>
+      </div>
+    </section>
+
+    <!-- Main Course -->
+    <section>
+      <h2>Main Course</h2>
+      <div class="menu-grid">
+        <article>
+          <img src="images/pizza.jpg" alt="Margherita Pizza">
+          <div>
+            <h3>Margherita Pizza</h3>
+            <p>Classic cheese and tomato pizza with basil.</p>
+          </div>
+        </article>
+        <p class="price">₹350</p>
+
+        <article>
+          <img src="images/pasta.jpg" alt="Pasta Alfredo">
+          <div>
+            <h3>Pasta Alfredo</h3>
+            <p>Creamy white sauce pasta with mushrooms.</p>
+          </div>
+        </article>
+        <p class="price">₹280</p>
+      </div>
+    </section>
+
+    <!-- Desserts -->
+    <section>
+      <h2>Desserts</h2>
+      <div class="menu-grid">
+        <article>
+          <img src="images/cake.jpg" alt="Chocolate Cake">
+          <div>
+            <h3>Chocolate Cake</h3>
+            <p>Rich chocolate layered cake.</p>
+          </div>
+        </article>
+        <p class="price">₹150</p>
+
+        <article>
+          <img src="images/ice cream.jpg" alt="Vanilla Ice Cream">
+          <div>
+            <h3>Vanilla Ice Cream</h3>
+            <p>Classic vanilla scoop with chocolate syrup.</p>
+          </div>
+        </article>
+        <p class="price">₹90</p>
+      </div>
+    </section>
+  </main>
+
+  <footer>
+    <p>&copy; 2025 Delicious Bites Restaurant | All Rights Reserved</p>
+  </footer>
+</body>
+</html>
